@@ -5,13 +5,27 @@ namespace Palasthotel\WordPress\GuestUser\Components;
 use ReflectionClass;
 use ReflectionException;
 
+defined( 'ABSPATH' ) || exit;
+
 /**
- * @property string path
- * @property string url
- * @property string basename
  * @version 0.1.3
  */
 abstract class Plugin {
+
+	/**
+	 * @var string
+	 */
+	public $path;
+
+	/**
+	 * @var string
+	 */
+	public $url;
+
+	/**
+	 * @var string
+	 */
+	public $basename;
 
 	/**
 	 * @var ReflectionClass

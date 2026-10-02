@@ -17,14 +17,26 @@
 
 namespace Palasthotel\WordPress\GuestUser;
 
+defined( 'ABSPATH' ) || exit;
+
 require_once dirname(__FILE__)."/vendor/autoload.php";
 
-/**
- * @property Repository $repository
- * @property Security $security
- * @property AdminView $adminView
- */
 class Plugin extends Components\Plugin {
+
+	/**
+	 * @var Repository
+	 */
+	public $repository;
+
+	/**
+	 * @var Security
+	 */
+	public $security;
+
+	/**
+	 * @var AdminView
+	 */
+	public $adminView;
 
 	const DOMAIN = "guest-user";
 
