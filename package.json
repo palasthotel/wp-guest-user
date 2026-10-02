@@ -1,6 +1,6 @@
 {
 	"name": "@palasthotel/guest-user",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"private": true,
 	"description": "Label users as guests: they can be credited as post authors, but cannot sign in.",
 	"license": "GPL-3.0-or-later",
