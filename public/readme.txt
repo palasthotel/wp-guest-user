@@ -5,7 +5,7 @@ Tags: user, guest, author, login, security
 Requires at least: 5.0
 Tested up to: 7.1.2
 Requires PHP: 7.4
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPL-3.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -42,6 +42,13 @@ No. The checkbox is only shown when you edit other users, so you cannot lock you
 In the user meta `_is_guest_user` with the value `yes`.
 
 == Changelog ==
+
+= 1.0.1 =
+**Bug Fixes**
+* remove the deprecation notices on PHP 8.2 and later (da1648a)
+* show the German translation of "Is guest" (83c573c)
+* sign guest accounts out everywhere, not only at the login form (0826910)
+* verify a nonce when the guest checkbox is saved (b5e075f)
 
 = 1.0.0 =
 * First release
