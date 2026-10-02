@@ -1,0 +1,19 @@
+{
+	"name": "@palasthotel/guest-user",
+	"version": "1.0.0",
+	"private": true,
+	"description": "Label users as guests: they can be credited as post authors, but cannot sign in.",
+	"license": "GPL-3.0-or-later",
+	"author": {
+		"name": "Palasthotel",
+		"email": "webmaster@palasthotel.de",
+		"url": "https://palasthotel.de"
+	},
+	"repository": "git+https://github.com/palasthotel/guest-user.git",
+	"bugs": {
+		"url": "https://github.com/palasthotel/guest-user/issues"
+	},
+	"scripts": {
+		"pack": "SLUG=guest-user bash ../github-workflows/wp-plugin/bin/pack.sh"
+	}
+}

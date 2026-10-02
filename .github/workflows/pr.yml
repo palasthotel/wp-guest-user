@@ -1,0 +1,20 @@
+name: PR
+
+on:
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    uses: palasthotel/github-workflows/.github/workflows/wp-plugin-pr.yml@v1
+    with:
+      slug: guest-user
+      dev-plugin-name: Guest User - DEV
+      required-files: |
+        vendor/autoload.php
+        languages/guest-user.pot
+        languages/guest-user-de_DE.mo
