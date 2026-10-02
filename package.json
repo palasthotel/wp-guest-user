@@ -9,9 +9,9 @@
 		"email": "webmaster@palasthotel.de",
 		"url": "https://palasthotel.de"
 	},
-	"repository": "git+https://github.com/palasthotel/guest-user.git",
+	"repository": "git+https://github.com/palasthotel/wp-guest-user.git",
 	"bugs": {
-		"url": "https://github.com/palasthotel/guest-user/issues"
+		"url": "https://github.com/palasthotel/wp-guest-user/issues"
 	},
 	"scripts": {
 		"pack": "SLUG=guest-user bash ../github-workflows/wp-plugin/bin/pack.sh"

@@ -22,7 +22,7 @@ msgstr ""
 
 #. Plugin URI of the plugin
 #: guest-user.php
-msgid "https://github.com/palasthotel/guest-user"
+msgid "https://github.com/palasthotel/wp-guest-user"
 msgstr ""
 
 #. Description of the plugin

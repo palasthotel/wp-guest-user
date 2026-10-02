@@ -26,8 +26,8 @@ msgid "Guest User"
 msgstr "Gast-Benutzer"
 
 #. Plugin URI of the plugin
-msgid "https://github.com/palasthotel/guest-user"
-msgstr "https://github.com/palasthotel/guest-user"
+msgid "https://github.com/palasthotel/wp-guest-user"
+msgstr "https://github.com/palasthotel/wp-guest-user"
 
 #. Description of the plugin
 msgid "Label accounts as guests and prevent the login"
