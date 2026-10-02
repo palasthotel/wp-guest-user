@@ -2,7 +2,12 @@
 
 namespace Palasthotel\WordPress\GuestUser;
 
+defined( 'ABSPATH' ) || exit;
+
 class AdminView extends Components\Component {
+
+	const NONCE_ACTION = "guest_user_set_flag";
+	const NONCE_NAME = "guest_user_nonce";
 
 	public function onCreate() {
 		parent::onCreate();
@@ -29,17 +34,17 @@ class AdminView extends Components\Component {
 	private function render( $checked ) {
 
 		?>
-            <h2>Guest User</h2>
+            <h2><?php esc_html_e("Guest User", "guest-user"); ?></h2>
             <table class="form-table">
                 <tbody>
                 <tr>
                     <th>
-                        <label for="guest-user"><?php _e("Is guest", Plugin::DOMAIN); ?></label>
+                        <label for="guest-user"><?php esc_html_e("Is guest", "guest-user"); ?></label>
                     </th>
                     <td>
                         <label for="guest-user">
-                            <input type="hidden" name="is_guest_user_request" value="it-is" />
-                            <input type="checkbox" name="is_guest_user" id="guest-user" value="true" <?= $checked ? "checked" : "" ?> /> <?php _e("If checked, user cannot sign in.", Plugin::DOMAIN); ?>
+                            <?php wp_nonce_field( self::NONCE_ACTION, self::NONCE_NAME ); ?>
+                            <input type="checkbox" name="is_guest_user" id="guest-user" value="true" <?php checked( $checked ); ?> /> <?php esc_html_e("If checked, user cannot sign in.", "guest-user"); ?>
                         </label>
                     </td>
                 </tr>
@@ -61,11 +66,17 @@ class AdminView extends Components\Component {
 		    return false;
 	    }
 
-	    if(!empty($_POST["is_guest_user_request"]) && "it-is" == $_POST["is_guest_user_request"] ){
-		    $this->plugin->repository->setIsGuest(
-			    $user_id,
-			    !empty($_POST["is_guest_user"]) && $_POST["is_guest_user"] == "true"
-		    );
+	    // Only requests from the form above carry the nonce; user_register fires for
+	    // every new account, however it is created.
+	    if ( empty( $_POST[ self::NONCE_NAME ] ) || ! wp_verify_nonce( sanitize_key( wp_unslash( $_POST[ self::NONCE_NAME ] ) ), self::NONCE_ACTION ) ) {
+		    return false;
 	    }
+
+	    $this->plugin->repository->setIsGuest(
+		    $user_id,
+		    !empty($_POST["is_guest_user"]) && $_POST["is_guest_user"] == "true"
+	    );
+
+	    return true;
     }
 }

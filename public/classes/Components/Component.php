@@ -2,15 +2,21 @@
 
 namespace Palasthotel\WordPress\GuestUser\Components;
 
+defined( 'ABSPATH' ) || exit;
+
 /**
  * Class Component
- *
- * @property \Palasthotel\WordPress\GuestUser\Plugin plugin
  *
  * @package Palasthotel\WordPress
  * @version 0.1.2
  */
 abstract class Component {
+
+	/**
+	 * @var \Palasthotel\WordPress\GuestUser\Plugin
+	 */
+	public $plugin;
+
 	/**
 	 * _Component constructor.
 	 *

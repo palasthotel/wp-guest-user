@@ -1,7 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Guest User\n"
-"POT-Creation-Date: 2022-06-29 08:10+0200\n"
+"Project-Id-Version: Guest User 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/guest-user\n"
+"POT-Creation-Date: 2026-10-02T10:07:01+00:00\n"
 "PO-Revision-Date: 2022-06-29 08:10+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -15,40 +16,36 @@ msgstr ""
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: guest-user.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
-"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
 "X-Poedit-SearchPathExcluded-1: vendor\n"
 
-#: classes/AdminView.php:37
-#, fuzzy
-#| msgid "Is Guest"
-msgid "Is guest"
-msgstr "Ist ein Gast"
-
-#: classes/AdminView.php:42
-msgid "If checked, user cannot sign in."
-msgstr ""
-"Wenn diese Option aktiviert ist, kann sich der Benutzer nicht anmelden."
-
-#. Plugin Name of the plugin/theme
+#. Plugin Name of the plugin
 msgid "Guest User"
 msgstr "Gast-Benutzer"
 
-#. Plugin URI of the plugin/theme
-msgid "https://github.com/palasthotel/guest-user"
-msgstr "https://github.com/palasthotel/guest-user"
+#. Plugin URI of the plugin
+msgid "https://github.com/palasthotel/wp-guest-user"
+msgstr "https://github.com/palasthotel/wp-guest-user"
 
-#. Description of the plugin/theme
+#. Description of the plugin
 msgid "Label accounts as guests and prevent the login"
 msgstr "Konten als Gäste kennzeichnen und die Anmeldung verhindern"
 
-#. Author of the plugin/theme
-msgid "Palasthotel by Edward <edward.bock@palasthotel.de>"
-msgstr "Palasthotel von Edward <edward.bock@palasthotel.de>"
+#. Author of the plugin
+msgid "Palasthotel <webmaster@palasthotel.de>"
+msgstr "Palasthotel <webmaster@palasthotel.de>"
 
-#. Author URI of the plugin/theme
+#. Author URI of the plugin
 msgid "https://palasthotel.de"
 msgstr "https://palasthotel.de"
+
+msgid "Is guest"
+msgstr "Ist ein Gast"
+
+msgid "If checked, user cannot sign in."
+msgstr "Wenn diese Option aktiviert ist, kann sich der Benutzer nicht anmelden."
+
+msgid "Guest accounts cannot sign in."
+msgstr "Gastkonten können sich nicht anmelden."

@@ -1,30 +1,45 @@
 <?php
 
 /**
- *
  * Plugin Name: Guest User
- * Plugin URI: https://github.com/palasthotel/guest-user
+ * Plugin URI: https://github.com/palasthotel/wp-guest-user
  * Description: Label accounts as guests and prevent the login
  * Version: 1.0.0
- * Author: Palasthotel by Edward <edward.bock@palasthotel.de>
+ * Author: Palasthotel <webmaster@palasthotel.de>
  * Author URI: https://palasthotel.de
- * Requires PHP: 7.4
  * Text Domain: guest-user
+ * Domain Path: /languages
+ * Requires at least: 5.0
+ * Tested up to: 7.1.2
+ * Requires PHP: 7.4
+ * License: GPL-3.0-or-later
+ * License URI: https://www.gnu.org/licenses/gpl-3.0.html
  * @copyright Copyright (c) 2022, Palasthotel
  * @package Palasthotel\WordPress\GuestUser
- *
  */
 
 namespace Palasthotel\WordPress\GuestUser;
 
+defined( 'ABSPATH' ) || exit;
+
 require_once dirname(__FILE__)."/vendor/autoload.php";
 
-/**
- * @property Repository $repository
- * @property Security $security
- * @property AdminView $adminView
- */
 class Plugin extends Components\Plugin {
+
+	/**
+	 * @var Repository
+	 */
+	public $repository;
+
+	/**
+	 * @var Security
+	 */
+	public $security;
+
+	/**
+	 * @var AdminView
+	 */
+	public $adminView;
 
 	const DOMAIN = "guest-user";
 
