@@ -3,7 +3,7 @@ Contributors: palasthotel, edwardbock, janaeggebrecht
 Donate link: https://palasthotel.de/
 Tags: user, guest, author, login, security
 Requires at least: 5.0
-Tested up to: 7.1.2
+Tested up to: 7.1
 Requires PHP: 7.4
 Stable tag: 1.0.1
 License: GPL-3.0-or-later
