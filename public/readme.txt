@@ -5,7 +5,7 @@ Tags: user, guest, author, login, security
 Requires at least: 5.0
 Tested up to: 7.1
 Requires PHP: 8.0
-Stable tag: 1.0.1
+Stable tag: 2.0.0
 License: GPL-3.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -42,6 +42,13 @@ No. The checkbox is only shown when you edit other users, so you cannot lock you
 In the user meta `_is_guest_user` with the value `yes`.
 
 == Changelog ==
+
+= 2.0.0 =
+**⚠ BREAKING CHANGES**
+* requires PHP 8.0 or newer
+
+**Features**
+* drop support for PHP 7.4 (344eed7)
 
 = 1.0.1 =
 **Bug Fixes**

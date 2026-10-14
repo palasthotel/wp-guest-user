@@ -4,7 +4,7 @@
  * Plugin Name: Guest User
  * Plugin URI: https://github.com/palasthotel/wp-guest-user
  * Description: Label accounts as guests and prevent the login
- * Version: 1.0.1
+ * Version: 2.0.0
  * Author: Palasthotel <webmaster@palasthotel.de>
  * Author URI: https://palasthotel.de
  * Text Domain: guest-user
