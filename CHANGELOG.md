@@ -8,6 +8,17 @@ on the file is maintained by
 The plugin's user-facing history lives in `public/readme.txt`, which is what shows on the
 wordpress.org plugin page.
 
+## [2.0.0](https://github.com/palasthotel/wp-guest-user/compare/v1.0.1...v2.0.0) (2026-10-14)
+
+
+### ⚠ BREAKING CHANGES
+
+* requires PHP 8.0 or newer
+
+### Features
+
+* drop support for PHP 7.4 ([344eed7](https://github.com/palasthotel/wp-guest-user/commit/344eed7cc7311794a5176920de3fd22da7ff9636))
+
 ## [1.0.1](https://github.com/palasthotel/wp-guest-user/compare/1.0.0...v1.0.1) (2026-10-02)
 
 
